@@ -2,6 +2,8 @@
 
 Electron + React + MasterCSS
 
+![preview](./docs/preview.webp)
+
 ## Usage
 
 Use degit to create a new project and install dependencies:
