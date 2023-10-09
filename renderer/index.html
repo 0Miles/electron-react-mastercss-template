@@ -4,8 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title></title>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            body {
+                background: #292a2d;
+                color: white;
+            }
+        }
+    </style>
   </head>
-  <body>
+  <body class="
+            {bg:#292a2d;color:white}@dark
+            {bg:white;color:black}@light
+            ~background|.1s|ease-out
+        ">
     <div id="root"></div>
     <script type="module" src="main.jsx"></script>
   </body>

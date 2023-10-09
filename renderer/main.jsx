@@ -1,6 +1,7 @@
 import React from 'react'
 import { createRoot } from 'react-dom/client'
 import { createHashRouter, RouterProvider } from 'react-router-dom'
+import { ThemeProvider } from './theme'
 import App from './app'
 import '@master/css'
 
@@ -16,6 +17,8 @@ const router = createHashRouter([
 
 root.render(
     <React.StrictMode>
-        <RouterProvider router={router} />
+        <ThemeProvider>
+            <RouterProvider router={router} />
+        </ThemeProvider>
     </React.StrictMode>
 )
