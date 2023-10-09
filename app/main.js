@@ -15,11 +15,12 @@ function createWindow() {
 
     // and load the index.html of the app.
     if (isDev) {
-        mainWindow.loadURL('http://localhost:5173/');
+        mainWindow.loadURL('http://localhost:5173/')
         // Open the DevTools.
         mainWindow.webContents.openDevTools()
     } else {
-        mainWindow.loadFile('../dist/index.html');
+        mainWindow.removeMenu()
+        mainWindow.loadFile('dist/index.html')
     }
 }
 
